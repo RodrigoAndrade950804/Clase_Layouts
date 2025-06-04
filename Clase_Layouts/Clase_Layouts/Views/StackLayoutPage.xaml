@@ -3,10 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Clase_Layouts.Views.StackLayoutPage"
              Title="StackLayoutPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Spacing="19">
+            <Label
+              Text="Rodrigo"
+              FontSize="32"
+              TextColor="GreenYellow"
+              HorizontalOptions="Center"/>
+            <Label 
+              Text="Andrade"
+              FontSize="24"
+              TextColor="Blue"
+              HorizontalOptions="Center" />
+            <Label 
+              Text="Jaramillo"
+              FontSize="18"
+              TextColor="Red"
+              HorizontalOptions="Center" />
+            <Button 
+              x:Name="btnIrAFlex"
+              Text="Ir a FlexLayout"
+              Clicked= "btnIrAFlex_Clicked" BorderColor="AliceBlue"
+              HorizontalOptions="Center"
+              VerticalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
 </ContentPage>
