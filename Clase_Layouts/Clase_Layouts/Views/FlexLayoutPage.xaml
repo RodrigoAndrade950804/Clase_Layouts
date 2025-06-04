@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clase_Layouts.Views.FlexLayoutPage"
+             Title="FlexLayoutPage">
+    <FlexLayout Direction="Row"
+                Wrap="Wrap"
+                AlignItems="Start"
+                JustifyContent="Start"
+                Padding="10"
+                BackgroundColor="White">
+
+
+        <Button Text="Botón 1"
+                WidthRequest="100"
+                HeightRequest="50"
+                Margin="5" />
+
+        <Button Text="Botón 2"
+                WidthRequest="100"
+                HeightRequest="50"
+                Margin="5" />
+
+        <Button Text="Botón 3"
+                WidthRequest="100"
+                HeightRequest="50"
+                Margin="5" />
+
+        <Button Text="Botón 4"
+                WidthRequest="100"
+                HeightRequest="50"
+                Margin="5" />
+
+
+        <Button x:Name="btnIrAAbsolute"
+                Text="Ir a AbsoluteLayout"
+                Margin="10"
+                HeightRequest="50"
+                WidthRequest="200"
+                BackgroundColor="LightGray"
+                Clicked="btnIrAAbsolute_Clicked" VerticalOptions="Center" />    
+    </FlexLayout>
+        
+</ContentPage>
