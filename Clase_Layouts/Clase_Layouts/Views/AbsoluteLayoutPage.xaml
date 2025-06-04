@@ -3,10 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Clase_Layouts.Views.AbsoluteLayoutPage"
              Title="AbsoluteLayoutPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <AbsoluteLayout>
+
+
+        <Image Source="chatgptia.jpg"
+               AbsoluteLayout.LayoutBounds="0.5,0,100,100"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               Aspect="AspectFit" />
+
+
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="20,120,20,20" Spacing="20">
+                <Label Text="ChatGPT" FontSize="24" FontAttributes="Bold" />
+                <Label Text="Es un modelo de lenguaje de inteligencia artificial desarrollado por OpenAI," FontSize="18" />
+                <Label Text="diseñado para generar respuestas textuales a preguntas o instrucciones." FontSize="18" />
+                <Label Text="Su historia es relativamente reciente, con su lanzamiento en noviembre de 2022," FontSize="18" />
+                <Label Text="aunque la investigación y desarrollo subyacente, especialmente en modelos de lenguaje grandes (LLMs), se han estado llevando a cabo durante años." FontSize="18" />
+                <BoxView HeightRequest="600" Color="Transparent"/>
+            </StackLayout>
+        </ScrollView>
+
+
+        <Button x:Name="btnIrAGrid"
+                Text="Ir a GridLayout"
+                AbsoluteLayout.LayoutBounds="1,1,150,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="LightBlue"
+                Clicked="btnIrAGrid_Clicked" VerticalOptions="Center" />
+
+    </AbsoluteLayout>
 </ContentPage>
