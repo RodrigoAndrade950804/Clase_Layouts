@@ -1,17 +1,19 @@
-﻿namespace Clase_Layouts
+﻿using Clase_Layouts.Views;
+
+namespace Clase_Layouts.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class GridLayoutPage : ContentPage
     {
         int count = 0;
 
-        public MainPage()
+        public GridLayoutPage()
         {
             InitializeComponent();
         }
 
         private void btnIrAStack_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new StackLayoutPage());
         }
     }
 
